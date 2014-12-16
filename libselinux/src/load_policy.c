@@ -315,6 +315,8 @@ int selinux_init_load_policy(int *enforce)
 	FILE *cfg;
 	char *buf;
 
+	fprintf(stderr, "selinux_init_load_policy\n");
+
 	/*
 	 * Reread the selinux configuration in case it has changed.
 	 * Example:  Caller has chroot'd and is now loading policy from
